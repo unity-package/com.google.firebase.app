@@ -163,6 +163,14 @@ Support
 
 Release Notes
 -------------
+### 6.14.0
+  - Changes
+    - Firestore: `Firestore.LoggingEnabled` is replaced by `Firestore.LogLevel`
+      for consistency with other Firebase Unity APIs. The getter for this
+      property has been removed.
+    - Crashlytics (iOS): Removes references to UIWebView APIs to prevent App
+      Store rejections.
+
 ### 6.13.0
   - Changes
     - General: Update asset labels so that External Dependency Manager works
@@ -176,6 +184,8 @@ Release Notes
       field’s value is IN a specified array. `Query.WhereArrayContainsAny()`
       finds documents where a specified field is an array and contains ANY
       element of a specified array.
+    - Firestore: Fixed QuerySnapshot.GetEnumerator() to not throw an
+      InvalidCastException.
 
 ### 6.12.0
   - Overview
