@@ -1,3 +1,14 @@
+## How To Install
+### Install by add directly in `manifest.json` in folder `Packages/manifest.json`
+- for version `13.6.0`
+```json
+"com.google.firebase.app" : "https://github.com/RageAgainstThePixel/com.google.firebase.app.git#13.6.0",
+```
+- dependency `external-dependency-manager 1.2.186`
+```json
+"com.google.external-dependency-manager": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm#v1.2.186",
+```
+
 Firebase Unity SDK
 ==================
 
@@ -2095,3 +2106,4 @@ Release Notes
       within AAR files matching the following pattern in each
       Unity package:
       `Firebase/m2repository/com/google/firebase/firebase-*-unity/*firebase-*.srcaar`
+
